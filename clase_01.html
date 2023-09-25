@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplo Bootstrap</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navegación -->
+    <!-- 'nav' crea un contenedor de navegación. 'bg-danger' pone el fondo en rojo. -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 'container-fluid' hace que el contenedor ocupe todo el ancho disponible -->
+    <div class="container-fluid">
+      <!-- 'row' crea una fila en la que se pueden agregar columnas -->
+      <div class="row">
+        <!-- Barra lateral -->
+        <!-- 'p-5' agrega padding en todas las direcciones. 'col-md-2' establece el ancho en pantallas medianas. 'bg-info' pone el fondo en azul. 'text-white' pone el texto en blanco. -->
+        <div class="p-5 col-md-3 bg-info text-white">Barra lateral</div>
+
+        <!-- Contenido -->
+        <!-- 'p-5' agrega padding. 'col-md-8' establece el ancho en pantallas medianas. 'bg-success' pone el fondo en verde. 'text-white' pone el texto en blanco. -->
+        <div class="p-10 col-md-9 bg-success text-white">Contenido aquí</div>
+
+        <!-- Pie de página -->
+        <!-- 'col-md-12' hace que la columna ocupe todo el ancho en pantallas medianas. 'p-3' agrega padding. 'bg-primary' pone el fondo en azul oscuro. 'text-white' pone el texto en blanco. -->
+        <div class="col-md-12 p-3 bg-primary text-white">Pie de página</div>
+      </div>
+    </div>
+    <!-- Incluir Bootstrap JS -->
+    <script src="./bootstrap.min.js"></script>
+  </body>
+</html>
